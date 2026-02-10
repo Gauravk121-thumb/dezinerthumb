@@ -1,0 +1,1274 @@
+<!doctype html>
+
+<html lang="en" class="scroll-smooth">
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Deziner - Professional Creative Services</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <style>
+
+    body { box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+
+    
+
+    /* RESTORED NEON GRADIENTS & GLOWS */
+
+    .gradient-text {
+
+      background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+
+      background-clip: text;
+
+    }
+
+    
+
+    .glow-orange { box-shadow: 0 0 60px rgba(249, 115, 22, 0.4); }
+
+    .glow-pink { box-shadow: 0 0 60px rgba(236, 72, 153, 0.4); }
+
+    .glow-purple { box-shadow: 0 0 60px rgba(139, 92, 246, 0.4); }
+
+
+
+    .card-gradient {
+
+      background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+
+      backdrop-filter: blur(10px);
+
+    }
+
+
+
+    /* Logo Shine Animation */
+
+    @keyframes shine-move {
+
+      0% { left: -100%; }
+
+      20% { left: 100%; }
+
+      100% { left: 100%; }
+
+    }
+
+    .logo-container {
+
+      position: relative;
+
+      overflow: hidden;
+
+      display: inline-block;
+
+    }
+
+    .logo-shine {
+
+      position: absolute;
+
+      top: 0;
+
+      left: -100%;
+
+      width: 50%;
+
+      height: 100%;
+
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+
+      transform: skewX(-25deg);
+
+      animation: shine-move 8s infinite; 
+
+    }
+
+
+
+    /* Scroll/Float Animations */
+
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+
+    .animate-float { animation: float 3s ease-in-out infinite; }
+
+    .animate-float-delay { animation: float 3s ease-in-out infinite 0.5s; }
+
+    .animate-float-delay-2 { animation: float 3s ease-in-out infinite 1s; }
+
+
+
+    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    .animate-scroll { animation: scroll 20s linear infinite; }
+
+
+
+    /* Notification Fade */
+
+    @keyframes slideInUp {
+
+      from { transform: translateY(100px); opacity: 0; }
+
+      to { transform: translateY(0); opacity: 1; }
+
+    }
+
+    .notify-enter { animation: slideInUp 0.5s ease-out forwards; }
+
+
+
+    .bg-grid {
+
+      background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+      background-size: 50px 50px;
+
+    }
+
+    
+
+    /* Custom Scrollbar */
+
+    ::-webkit-scrollbar { width: 8px; }
+
+    ::-webkit-scrollbar-track { background: #030712; }
+
+    ::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
+
+    ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
+
+  </style>
+
+ </head>
+
+ <body class="bg-gray-950 text-white overflow-x-hidden relative">
+
+  
+
+  <!-- BACKGROUND GRID -->
+
+  <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+
+
+
+  <!-- TOP MARQUEE -->
+
+  <div class="bg-black/80 border-b border-white/10 overflow-hidden py-2 relative z-50">
+
+     <div class="whitespace-nowrap flex animate-scroll w-max">
+
+       <div class="flex gap-8 mx-4">
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+       </div>
+
+       <!-- Duplicate for loop -->
+
+       <div class="flex gap-8 mx-4">
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+         <span class="text-xs md:text-sm font-medium tracking-wide">GET YOUR ATTRACTIVE CREATIVES AND THUMBNAILS | <span class="font-bold gradient-text">DEZINER</span></span>
+
+         <span class="text-xs md:text-sm text-gray-500">|</span>
+
+       </div>
+
+     </div>
+
+   </div>
+
+
+
+   <!-- HEADER (Desktop & Mobile Optimized) -->
+
+   <header class="sticky top-0 z-40 w-full transition-all duration-300" id="main-header">
+
+    <div class="absolute inset-0 bg-gray-950/80 backdrop-blur-md border-b border-white/10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+
+      <div class="flex justify-between items-center py-4">
+
+        
+
+        <!-- Logo -->
+
+        <div class="logo-container group cursor-pointer">
+
+           <img src="L1.png" alt="Deziner Logo" class="h-10 md:h-12 w-auto object-contain">
+
+           <div class="logo-shine"></div>
+
+        </div>
+
+
+
+        <!-- Desktop Nav -->
+
+        <nav class="hidden md:flex items-center gap-8">
+
+          <a href="#portfolio" class="text-sm font-medium text-gray-300 hover:text-white hover:underline decoration-pink-500 underline-offset-4 transition-all">Thumbnails</a>
+
+          <a href="#posts" class="text-sm font-medium text-gray-300 hover:text-white hover:underline decoration-pink-500 underline-offset-4 transition-all">Post Design</a>
+
+          <a href="#pricing" class="text-sm font-medium text-gray-300 hover:text-white hover:underline decoration-pink-500 underline-offset-4 transition-all">Pricing</a>
+
+          <a href="mailto:adohubservice1@gmail.com" class="px-5 py-2 bg-white/10 hover:bg-white/20 border border-white/10 rounded-full text-sm font-semibold transition-all">
+
+            <i class="fa-regular fa-envelope mr-2"></i>Email Us
+
+          </a>
+
+        </nav>
+
+
+
+        <!-- Mobile Menu Button -->
+
+        <div class="md:hidden">
+
+          <button id="mobile-menu-btn" class="p-2 text-gray-300 hover:text-white focus:outline-none">
+
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Mobile Dropdown Menu -->
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 border-b border-white/10 shadow-2xl">
+
+      <div class="flex flex-col p-4 space-y-4">
+
+        <a href="#portfolio" class="block px-4 py-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 text-center font-semibold">Thumbnails</a>
+
+        <a href="#posts" class="block px-4 py-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 text-center font-semibold">Post Design</a>
+
+        <a href="#pricing" class="block px-4 py-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 text-center font-semibold">Pricing</a>
+
+        <a href="mailto:adohubservice1@gmail.com" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-pink-600 text-center font-bold text-white shadow-lg">
+
+          Email Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+   </header>
+
+
+
+   <!-- HERO SECTION -->
+
+   <section class="relative py-16 md:py-28 overflow-hidden z-10">
+
+    <div class="absolute top-20 left-10 w-72 h-72 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+
+
+
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10 mb-6">
+
+        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> 
+
+        <span class="text-xs md:text-sm text-gray-300 tracking-wide">Accepting New Orders</span>
+
+      </div>
+
+      <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">Stunning Designs<br><span class="gradient-text">That Get Clicks</span></h1>
+
+      <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">High-CTR Thumbnails & Premium Social Media Creatives.</p>
+
+      
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+        <a href="https://wa.me/918433415139?text=Hi,%20I%20want%20to%20discuss%20a%20project." target="_blank" class="px-8 py-4 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-full font-bold text-lg hover:shadow-lg hover:shadow-pink-500/25 transition-all w-full sm:w-auto">
+
+          <i class="fa-brands fa-whatsapp mr-2"></i> Chat on WhatsApp
+
+        </a>
+
+        <a href="#portfolio" class="px-8 py-4 bg-white/5 border border-white/20 rounded-full font-semibold text-lg hover:bg-white/10 transition-all w-full sm:w-auto">
+
+          View Work
+
+        </a>
+
+      </div>
+
+      
+
+      <!-- Hero Floating Images (Restored Neon Glow) -->
+
+      <div class="mt-20 grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+
+         <div class="aspect-video rounded-xl bg-gray-800 border border-white/10 overflow-hidden animate-float glow-orange">
+
+           <img src="T1.png" class="w-full h-full object-cover">
+
+         </div>
+
+         <div class="aspect-video rounded-xl bg-gray-800 border border-white/10 overflow-hidden animate-float-delay transform scale-110 z-10 glow-pink">
+
+           <img src="T2.png" class="w-full h-full object-cover">
+
+         </div>
+
+         <div class="aspect-video rounded-xl bg-gray-800 border border-white/10 overflow-hidden animate-float-delay-2 glow-purple">
+
+           <img src="T3.png" class="w-full h-full object-cover">
+
+         </div>
+
+      </div>
+
+    </div>
+
+   </section>
+
+
+
+   <!-- THUMBNAILS SECTION -->
+
+   <section id="portfolio" class="py-20 bg-gray-900/50 relative z-10">
+
+     <div class="max-w-7xl mx-auto px-6">
+
+       <div class="text-center mb-10">
+
+         <h2 class="font-display text-4xl font-bold mb-4">Latest <span class="gradient-text">Thumbnails</span></h2>
+
+         <!-- Payment Terms Box -->
+
+         <div class="bg-gray-800/50 border border-white/10 rounded-xl p-4 inline-block max-w-2xl">
+
+           <p class="text-sm text-gray-300">
+
+             <i class="fa-solid fa-circle-info text-blue-400 mr-2"></i>
+
+             <span class="text-orange-400 font-bold">Payment:</span> 50% Advance & 50% After Completion.<br>
+
+             Delivery via <span class="text-white font-bold underline">Mail</span> only. 
+
+             <span class="text-red-400 font-bold">Raw PSD NOT Included.</span>
+
+           </p>
+
+         </div>
+
+       </div>
+
+
+
+       <!-- Shuffling Grid -->
+
+       <div id="thumbnail-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+         <!-- Images B1-B10 -->
+
+         <script>
+
+            for(let i=1; i<=10; i++) {
+
+                document.write(`<div class="aspect-video rounded-lg overflow-hidden border border-white/10 bg-gray-800 group relative hover:border-pink-500/50 transition-colors">
+
+                    <img src="B${i}.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Thumbnail ${i}">
+
+                </div>`);
+
+            }
+
+         </script>
+
+       </div>
+
+       
+
+       <div class="text-center mt-8">
+
+         <a href="https://wa.me/918433415139?text=Hi,%20I%20want%20to%20order%20a%20Thumbnail." target="_blank" class="inline-flex items-center text-green-400 hover:text-green-300 font-semibold">
+
+            Book a Thumbnail <i class="fa-solid fa-arrow-right ml-2"></i>
+
+         </a>
+
+       </div>
+
+     </div>
+
+   </section>
+
+
+
+   <!-- POSTS & PACKAGE SECTION -->
+
+   <section id="posts" class="py-20 relative z-10">
+
+     <div class="max-w-7xl mx-auto px-6">
+
+       <div class="text-center mb-12">
+
+         <h2 class="font-display text-4xl font-bold mb-4">Post <span class="gradient-text">Design</span></h2>
+
+         <p class="text-gray-400">Vertical (4:5) Layouts Optimized for Instagram</p>
+
+       </div>
+
+
+
+       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+         <!-- Left: Grid (Updated to 4:5 Aspect Ratio) -->
+
+         <div class="lg:col-span-2">
+
+            <div id="posts-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+               <script>
+
+                 for(let i=1; i<=10; i++) {
+
+                   let classes = i > 6 ? "hidden md:block" : "";
+
+                   // Changed from aspect-square to aspect-[4/5]
+
+                   document.write(`<div class="${classes} aspect-[4/5] rounded-lg overflow-hidden border border-white/10 bg-gray-800 relative group hover:border-purple-500/50 transition-colors">
+
+                       <img src="P${i}.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Post ${i}">
+
+                   </div>`);
+
+                 }
+
+               </script>
+
+            </div>
+
+         </div>
+
+
+
+         <!-- Right: Package Card -->
+
+         <div class="lg:col-span-1">
+
+           <div class="sticky top-24 card-gradient border-2 border-purple-500/50 rounded-2xl p-6 md:p-8 shadow-2xl shadow-purple-900/20 glow-purple">
+
+             <div class="text-center mb-6">
+
+               <h3 class="font-display text-2xl font-bold text-white">Social Media Kit</h3>
+
+               <p class="text-gray-400 text-xs mt-1">Best Value for Businesses</p>
+
+               <div class="mt-4 flex flex-col items-center">
+
+                 <span class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">₹4,999</span>
+
+                 <span class="text-lg text-gray-500 font-medium">or $100 USD</span>
+
+               </div>
+
+             </div>
+
+
+
+             <ul class="space-y-4 mb-8 text-sm md:text-base">
+
+               <li class="flex items-center gap-3 text-gray-300">
+
+                 <i class="fa-solid fa-check text-green-400"></i> 10 Static Posts
+
+               </li>
+
+               <li class="flex items-center gap-3 text-gray-300">
+
+                 <i class="fa-solid fa-clock text-green-400"></i> Delivery within 1 Week
+
+               </li>
+
+               <li class="flex items-center gap-3 text-gray-300">
+
+                 <i class="fa-brands fa-whatsapp text-green-400"></i> Priority Support
+
+               </li>
+
+               <li class="flex items-center gap-3 text-gray-300">
+
+                 <i class="fa-solid fa-pen-nib text-green-400"></i> 2 Revisions / Post
+
+               </li>
+
+               <li class="flex items-center gap-3 text-gray-400 text-xs border-t border-white/10 pt-2">
+
+                 <i class="fa-solid fa-circle-exclamation text-red-400"></i> Extra Revision: ₹50 charge
+
+               </li>
+
+             </ul>
+
+
+
+             <a href="https://wa.me/918433415139?text=Hi,%20I%20am%20interested%20in%20the%20Rs.4999%20Social%20Media%20Package." target="_blank" class="block w-full text-center py-3 bg-green-600 hover:bg-green-500 rounded-lg font-bold transition-all mb-3">
+
+               <i class="fa-brands fa-whatsapp"></i> Book Now
+
+             </a>
+
+             <div class="text-center">
+
+                 <p class="text-xs text-gray-500">International clients?</p>
+
+                 <a href="mailto:adohubservice1@gmail.com" class="text-xs text-pink-400 underline">Connect via Mail</a>
+
+             </div>
+
+           </div>
+
+         </div>
+
+       </div>
+
+     </div>
+
+   </section>
+
+
+
+   <!-- WORKED WITH SCROLLER -->
+
+   <section class="py-10 bg-black/40 border-y border-white/5">
+
+     <div class="max-w-7xl mx-auto px-6 mb-6 text-center">
+
+        <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Trusted By Creators</p>
+
+     </div>
+
+     <div class="overflow-hidden relative w-full">
+
+       <div class="flex animate-scroll whitespace-nowrap w-max items-center">
+
+         <!-- Original + Duplicates -->
+
+         <div class="flex gap-12 mx-6 opacity-60 grayscale hover:grayscale-0 transition-all">
+
+           <img src="I1.png" class="h-12 w-auto"><img src="I2.png" class="h-12 w-auto"><img src="I3.png" class="h-12 w-auto"><img src="I4.png" class="h-12 w-auto"><img src="I5.png" class="h-12 w-auto"><img src="I6.png" class="h-12 w-auto">
+
+         </div>
+
+         <div class="flex gap-12 mx-6 opacity-60 grayscale hover:grayscale-0 transition-all">
+
+           <img src="I1.png" class="h-12 w-auto"><img src="I2.png" class="h-12 w-auto"><img src="I3.png" class="h-12 w-auto"><img src="I4.png" class="h-12 w-auto"><img src="I5.png" class="h-12 w-auto"><img src="I6.png" class="h-12 w-auto">
+
+         </div>
+
+         <div class="flex gap-12 mx-6 opacity-60 grayscale hover:grayscale-0 transition-all">
+
+           <img src="I1.png" class="h-12 w-auto"><img src="I2.png" class="h-12 w-auto"><img src="I3.png" class="h-12 w-auto"><img src="I4.png" class="h-12 w-auto"><img src="I5.png" class="h-12 w-auto"><img src="I6.png" class="h-12 w-auto">
+
+         </div>
+
+       </div>
+
+     </div>
+
+   </section>
+
+
+
+   <!-- PRICING SECTION -->
+
+   <section id="pricing" class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+     <div class="text-center mb-16">
+
+      <h2 class="font-display text-4xl font-bold mb-4">Simple <span class="gradient-text">Pricing</span></h2>
+
+      <p class="text-gray-400">Transparent rates. No hidden fees.</p>
+
+     </div>
+
+     
+
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+      
+
+      <!-- Starter -->
+
+      <div class="card-gradient border border-white/10 rounded-2xl p-6 text-center hover:border-orange-500/50 transition-all">
+
+        <h3 class="text-xl font-semibold mb-2">Single Thumbnail</h3>
+
+        <div class="my-6">
+
+          <div class="text-3xl font-bold">₹1,500 <span class="text-base font-normal text-gray-500">/ $15</span></div>
+
+        </div>
+
+        <ul class="text-sm text-gray-400 space-y-3 mb-6 text-left pl-4">
+
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 1 Design</li>
+
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 2 Revisions</li>
+
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 24h Delivery</li>
+
+        </ul>
+
+        <a href="https://wa.me/918433415139?text=Hi,%20I%20want%20the%20Single%20Thumbnail%20package." target="_blank" class="block w-full py-2 bg-white/5 border border-white/20 rounded-lg hover:bg-white/10">Order Now</a>
+
+      </div>
+
+
+
+      <!-- Pro -->
+
+      <div class="card-gradient border-2 border-pink-500 rounded-2xl p-6 text-center relative transform md:-translate-y-4 shadow-xl shadow-pink-900/20 glow-pink">
+
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-pink-600 text-xs px-3 py-1 rounded-full font-bold">POPULAR</div>
+
+        <h3 class="text-xl font-semibold mb-2">Pro Pack</h3>
+
+        <div class="my-6">
+
+          <div class="text-3xl font-bold">₹4,000 <span class="text-base font-normal text-gray-500">/ $50</span></div>
+
+          <p class="text-xs text-gray-500 mt-1">3 Thumbnails</p>
+
+        </div>
+
+        <ul class="text-sm text-gray-400 space-y-3 mb-6 text-left pl-4">
+
+            <li><i class="fa-solid fa-check text-pink-500 mr-2"></i> 3 Premium Designs</li>
+
+            <li><i class="fa-solid fa-check text-pink-500 mr-2"></i> Unlimited Revisions</li>
+
+            <li><i class="fa-solid fa-check text-pink-500 mr-2"></i> Source Files (PSD)</li>
+
+        </ul>
+
+        <a href="https://wa.me/918433415139?text=Hi,%20I%20want%20the%20Pro%20Pack%20(3%20Thumbnails)." target="_blank" class="block w-full py-2 bg-gradient-to-r from-orange-500 to-pink-600 rounded-lg hover:opacity-90">Order Now</a>
+
+      </div>
+
+
+
+      <!-- Enterprise -->
+
+      <div class="card-gradient border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition-all">
+
+        <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+
+        <div class="my-6">
+
+          <div class="text-3xl font-bold">₹12,000 <span class="text-base font-normal text-gray-500">/ $150</span></div>
+
+          <p class="text-xs text-gray-500 mt-1">10 Thumbnails/Month</p>
+
+        </div>
+
+        <ul class="text-sm text-gray-400 space-y-3 mb-6 text-left pl-4">
+
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Priority Queue</li>
+
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Dedicated Manager</li>
+
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Same Day Delivery</li>
+
+        </ul>
+
+        <a href="mailto:adohubservice1@gmail.com" class="block w-full py-2 bg-white/5 border border-white/20 rounded-lg hover:bg-white/10">Contact Us</a>
+
+      </div>
+
+
+
+     </div>
+
+    </div>
+
+   </section>
+
+
+
+   <!-- TESTIMONIALS (Humanized) -->
+
+   <section class="py-20 bg-gray-900/30">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="font-display text-3xl font-bold text-center mb-12">Client <span class="gradient-text">Love</span></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Review 1 -->
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-white/5 hover:border-orange-500/30 transition-all">
+
+                <div class="flex text-yellow-400 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <p class="text-gray-300 text-sm mb-4">"Bro, honestly the CTR went up like crazy after the redesign. The delivery was fast too. Recommended."</p>
+
+                <p class="text-gray-500 text-xs font-bold">- Rohan M.</p>
+
+            </div>
+
+            <!-- Review 2 -->
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-white/5 hover:border-pink-500/30 transition-all">
+
+                <div class="flex text-yellow-400 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <p class="text-gray-300 text-sm mb-4">"Was skeptical about the payment terms first but they delivered exactly what I asked for. The gradient work is sick."</p>
+
+                <p class="text-gray-500 text-xs font-bold">- Sarah J.</p>
+
+            </div>
+
+            <!-- Review 3 -->
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-white/5 hover:border-purple-500/30 transition-all">
+
+                <div class="flex text-yellow-400 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <p class="text-gray-300 text-sm mb-4">"Best part is they listen to feedback. Did not have to fight for revisions. Simple and clean work."</p>
+
+                <p class="text-gray-500 text-xs font-bold">- Amit Verma</p>
+
+            </div>
+
+            <!-- Review 4 -->
+
+            <div class="bg-gray-800 p-6 rounded-xl border border-white/5 hover:border-blue-500/30 transition-all">
+
+                <div class="flex text-yellow-400 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                <p class="text-gray-300 text-sm mb-4">"Using the social media package for my gym. The posts look very professional. Good value for money."</p>
+
+                <p class="text-gray-500 text-xs font-bold">- FitLife Studio</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   </section>
+
+
+
+   <!-- FOOTER -->
+
+   <footer class="border-t border-white/10 pt-16 pb-8 bg-black/20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+      <!-- Brand -->
+
+      <div class="md:col-span-1">
+
+       <div class="logo-container mb-4">
+
+           <img src="L1.png" alt="Deziner" class="h-10 w-auto">
+
+           <div class="logo-shine"></div>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-6">Creating visuals that leave a lasting impact.</p>
+
+       
+
+       <div class="flex flex-col gap-3">
+
+           <a href="mailto:adohubservice1@gmail.com" class="inline-flex items-center text-sm text-gray-300 hover:text-white transition-colors">
+
+             <i class="fa-solid fa-envelope w-6 text-pink-500"></i> adohubservice1@gmail.com
+
+           </a>
+
+           <a href="https://www.instagram.com/adohub_/" target="_blank" class="inline-flex items-center text-sm text-gray-300 hover:text-white transition-colors">
+
+             <i class="fa-brands fa-instagram w-6 text-pink-500"></i> @adohub_
+
+           </a>
+
+       </div>
+
+      </div>
+
+
+
+      <!-- Links -->
+
+      <div>
+
+       <h4 class="font-bold text-white mb-4">Links</h4>
+
+       <ul class="space-y-2 text-sm text-gray-400">
+
+        <li><a href="#portfolio" class="hover:text-pink-500 transition-colors">Portfolio</a></li>
+
+        <li><a href="#pricing" class="hover:text-pink-500 transition-colors">Pricing</a></li>
+
+        <li><a href="https://wa.me/918433415139" class="hover:text-pink-500 transition-colors">WhatsApp</a></li>
+
+       </ul>
+
+      </div>
+
+
+
+      <!-- Legal (Triggers Modals) -->
+
+      <div>
+
+       <h4 class="font-bold text-white mb-4">Legal</h4>
+
+       <ul class="space-y-2 text-sm text-gray-400 cursor-pointer">
+
+        <li onclick="toggleModal('terms-modal')"><span class="hover:text-pink-500 transition-colors">Terms of Service</span></li>
+
+        <li onclick="toggleModal('privacy-modal')"><span class="hover:text-pink-500 transition-colors">Privacy Policy</span></li>
+
+        <li onclick="toggleModal('refund-modal')"><span class="hover:text-pink-500 transition-colors">Refund Policy</span></li>
+
+       </ul>
+
+      </div>
+
+      
+
+      <!-- International Note -->
+
+      <div>
+
+          <h4 class="font-bold text-white mb-4">International Clients</h4>
+
+          <p class="text-xs text-gray-400 leading-relaxed">
+
+              We accept payments via PayPal or Crypto for international orders. 
+
+              Please connect via Mail or Instagram for a custom invoice in USD.
+
+          </p>
+
+      </div>
+
+     </div>
+
+
+
+     <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <p class="text-gray-600 text-xs">© 2026 Deziner. All rights reserved.</p>
+
+     </div>
+
+    </div>
+
+   </footer>
+
+
+
+   <!-- === MODALS (POPUPS) === -->
+
+   
+
+   <!-- Refund Modal -->
+
+   <div id="refund-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+
+       <div class="bg-gray-900 border border-red-500/30 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+
+           <button onclick="toggleModal('refund-modal')" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark fa-lg"></i></button>
+
+           <h3 class="text-xl font-bold text-red-400 mb-4"><i class="fa-solid fa-ban mr-2"></i>Refund Policy</h3>
+
+           <div class="text-gray-300 text-sm space-y-3">
+
+               <p>We maintain a strict <strong>No Refund Policy</strong> once the work has commenced.</p>
+
+               <p>Due to the nature of digital design work, time and resources are allocated immediately upon booking. Therefore, the 50% advance payment is non-refundable.</p>
+
+               <p>We offer revisions as per the selected package to ensure satisfaction, but cancellations after work start are not eligible for refunds.</p>
+
+           </div>
+
+       </div>
+
+   </div>
+
+
+
+   <!-- Terms Modal -->
+
+   <div id="terms-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+
+       <div class="bg-gray-900 border border-white/10 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+
+           <button onclick="toggleModal('terms-modal')" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark fa-lg"></i></button>
+
+           <h3 class="text-xl font-bold text-white mb-4">Terms & Conditions</h3>
+
+           <div class="text-gray-300 text-sm space-y-3 h-60 overflow-y-auto custom-scrollbar">
+
+               <p><strong>1. Payments:</strong> A 50% deposit is required before starting any project. The remaining 50% is due upon completion but before the final delivery of high-quality files without watermarks.</p>
+
+               <p><strong>2. Revisions:</strong> Standard packages include 2 revisions. Additional revisions are charged at ₹50 per iteration.</p>
+
+               <p><strong>3. Files:</strong> We deliver PNG/JPG formats via email. Raw PSD files are NOT included in standard packages unless specified in the Enterprise/Pro plan.</p>
+
+               <p><strong>4. Rights:</strong> Upon full payment, the client receives rights to use the designs for their intended purpose. Deziner reserves the right to display the work in portfolios.</p>
+
+           </div>
+
+       </div>
+
+   </div>
+
+
+
+   <!-- Privacy Modal -->
+
+   <div id="privacy-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+
+       <div class="bg-gray-900 border border-white/10 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+
+           <button onclick="toggleModal('privacy-modal')" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i class="fa-solid fa-xmark fa-lg"></i></button>
+
+           <h3 class="text-xl font-bold text-white mb-4">Privacy Policy</h3>
+
+           <div class="text-gray-300 text-sm space-y-3">
+
+               <p>At Deziner, we respect your privacy.</p>
+
+               <p>We only collect information necessary to complete your project (Email, Name, Social Handles). Your creative assets and data are never shared with third parties.</p>
+
+               <p>We do not store payment information; all transactions are handled via secure third-party gateways (UPI/PayPal).</p>
+
+           </div>
+
+       </div>
+
+   </div>
+
+
+
+   <!-- LIVE SALES NOTIFICATION (Bottom Left) -->
+
+   <div id="live-notification" class="fixed bottom-4 left-4 z-40 bg-gray-800 border border-gray-700 rounded-lg p-3 shadow-2xl flex items-center gap-3 max-w-xs transform translate-y-20 opacity-0 transition-all duration-500">
+
+       <div class="h-10 w-10 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">
+
+           <i class="fa-solid fa-cart-shopping"></i>
+
+       </div>
+
+       <div>
+
+           <p class="text-xs text-gray-400"><span id="notify-name" class="font-bold text-white">Rahul</span> from <span id="notify-loc">Mumbai</span></p>
+
+           <p class="text-xs text-gray-300">Purchased <span id="notify-service" class="text-orange-400">Starter Pack</span></p>
+
+           <p class="text-[10px] text-gray-500 mt-0.5">Just now • <span id="notify-price">₹1500</span></p>
+
+       </div>
+
+       <button onclick="closeNotify()" class="absolute top-1 right-2 text-gray-600 hover:text-white text-xs">&times;</button>
+
+   </div>
+
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+
+   <button id="scrollToTop" class="fixed bottom-6 right-6 z-40 bg-pink-600 hover:bg-pink-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 pointer-events-none transform translate-y-10">
+
+       <i class="fa-solid fa-arrow-up"></i>
+
+   </button>
+
+
+
+   <!-- SCRIPTS -->
+
+   <script>
+
+    // === 1. Mobile Menu Logic ===
+
+    const btn = document.getElementById('mobile-menu-btn');
+
+    const menu = document.getElementById('mobile-menu');
+
+
+
+    btn.addEventListener('click', () => {
+
+      menu.classList.toggle('hidden');
+
+    });
+
+
+
+    // === 2. Rearrange Logic (Thumbnails & Posts) ===
+
+    function shuffleNodes(containerId) {
+
+        const container = document.getElementById(containerId);
+
+        if(!container) return;
+
+        const items = Array.from(container.children);
+
+        if (items.length < 2) return;
+
+        
+
+        const idx1 = Math.floor(Math.random() * items.length);
+
+        let idx2 = Math.floor(Math.random() * items.length);
+
+        while(idx1 === idx2) idx2 = Math.floor(Math.random() * items.length);
+
+
+
+        const item1 = items[idx1]; 
+
+        const item2 = items[idx2];
+
+        
+
+        // Simple swap visual
+
+        item1.style.opacity = '0.2';
+
+        item2.style.opacity = '0.2';
+
+        
+
+        setTimeout(() => {
+
+            const next1 = item1.nextSibling;
+
+            const parent = item1.parentNode;
+
+            if (next1 === item2) parent.insertBefore(item2, item1);
+
+            else {
+
+               const next2 = item2.nextSibling;
+
+               parent.insertBefore(item2, item1);
+
+               parent.insertBefore(item1, next2); 
+
+            }
+
+            item1.style.opacity = '1';
+
+            item2.style.opacity = '1';
+
+        }, 500);
+
+    }
+
+    setInterval(() => shuffleNodes('thumbnail-grid'), 5000);
+
+    setInterval(() => shuffleNodes('posts-grid'), 5000);
+
+
+
+    // === 3. Live Notification Logic ===
+
+    const names = ["Rahul", "Amit", "Sarah", "John", "Priya", "Mike", "Ankit", "Emily", "Vikram"];
+
+    const locations = ["Mumbai", "Delhi", "USA", "UK", "Bangalore", "Canada", "Pune", "Australia", "Jaipur"];
+
+    const services = ["Starter Pack", "Pro Pack", "Social Kit", "Thumbnail"];
+
+    
+
+    function showNotification() {
+
+        const notifyBox = document.getElementById('live-notification');
+
+        
+
+        // Random Data
+
+        const name = names[Math.floor(Math.random() * names.length)];
+
+        const loc = locations[Math.floor(Math.random() * locations.length)];
+
+        const service = services[Math.floor(Math.random() * services.length)];
+
+        
+
+        // Logic: India = INR, Others = USD
+
+        const isIndia = ["Mumbai","Delhi","Bangalore","Pune","Jaipur"].includes(loc);
+
+        const price = isIndia ? "₹1500" : "$20"; // Simplified logic for demo
+
+        
+
+        document.getElementById('notify-name').innerText = name;
+
+        document.getElementById('notify-loc').innerText = loc;
+
+        document.getElementById('notify-service').innerText = service;
+
+        document.getElementById('notify-price').innerText = isIndia ? (service.includes("Social") ? "₹4999" : "₹1500") : (service.includes("Social") ? "$100" : "$15");
+
+
+
+        // Show
+
+        notifyBox.classList.remove('translate-y-20', 'opacity-0');
+
+        
+
+        // Hide after 5 seconds
+
+        setTimeout(() => {
+
+            notifyBox.classList.add('translate-y-20', 'opacity-0');
+
+        }, 5000);
+
+    }
+
+    
+
+    // Start Loop
+
+    setTimeout(() => {
+
+        showNotification();
+
+        setInterval(showNotification, 15000); // Every 15 seconds
+
+    }, 5000);
+
+
+
+    function closeNotify() {
+
+        document.getElementById('live-notification').classList.add('translate-y-20', 'opacity-0');
+
+    }
+
+
+
+    // === 4. Modals Logic ===
+
+    function toggleModal(modalId) {
+
+        const modal = document.getElementById(modalId);
+
+        if (modal.classList.contains('hidden')) {
+
+            modal.classList.remove('hidden');
+
+        } else {
+
+            modal.classList.add('hidden');
+
+        }
+
+    }
+
+
+
+    // === 5. Scroll to Top Logic ===
+
+    const scrollBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+
+        if (window.scrollY > 300) {
+
+            scrollBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+
+        } else {
+
+            scrollBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+
+        }
+
+    });
+
+    scrollBtn.addEventListener('click', () => {
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    });
+
+
+
+   </script>
+
+ </body>
+
+</html>
+
